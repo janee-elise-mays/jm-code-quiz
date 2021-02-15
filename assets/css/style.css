@@ -1,0 +1,23 @@
+header{text-align: center;}
+.start-button{
+        display: inline-block;
+        margin: auto;
+        padding: 15px 25px;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: slategray;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px black;
+}     
+.start-button:hover {background-color: slategray}
+
+.start-button:active {
+        background-color: slategray;
+        box-shadow: 0 5px black;
+        transform: translateY(4px);;
+    }

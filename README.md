@@ -1,8 +1,7 @@
 # jm-code-quiz
 A timed coding quiz with multiple-choice questions.
 
-Begin by creating a start button
-which triggers a timer.
+Begin by creating a start button which triggers a timer.
 
 A question is presented - once an answer is selected, it is stored and a new question is provided.
 
