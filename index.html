@@ -8,56 +8,41 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<!-- <body>
-    <header>
-        <h1> Coding Quiz Challenge</h1>
-        <p>Try to answer the following code-related questions within
-            the time limit. Keep in mind the incorrect answers will penalize
-            your score/time by ten seconds!
-        </p>
-        <button class="start-button">Start</button>
-    </header>
-    <main>
-        <div class="card timer">
-            <div class="timer-text">
-                <div class="large-font timer-count">10</div>
-                <p>seconds remaining</p>
-            </div>
-    </main>
-    <script src="assets/js/script.js"></script>
-</body> -->
-
-<!-- </html> -->
-
 <body>
     <header>
-        <h1>Coding Quiz Challenge</h1>
-        <p>Try to answer the following code-related questions within
-            the time limit. Keep in mind the incorrect answers will penalize
-            your score/time by ten seconds!
-        </p>
-        <button class="start-button">Start</button>
-    </header>
-
-    <main>
-        <section>
-            <div class="card results">
-                <div class="win-loss-container">
-                    <div>
-                        <h2>Wins: <span class="win">0 </span> </h2>
-                        <h2>Losses: <span class="lose">0</span></h2>
-                    </div>
-                </div>
-                <div class="card timer">
-                    <div class="timer-text">
-                        <div class="large-font timer-count">10</div>
-                        <h3>seconds remaining</h3>
-                    </div>
-
-                </div>
+        <!-- Quiz Begin Box containing quiz description and start button -->
+        <div class="start-box">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within
+                the time limit. Keep in mind the incorrect answers will penalize
+                your score/time by ten seconds!
+            </p>
+            <button class="start-button">Start</button>
+            <!-- Quiz timer -->
+            <div class="timer">
+                <div class="time-text">Time Remaining</div>
+                <div class="time-sec">75</div>
             </div>
-        </section>
-    </main>
+        </div>
+    </header>
+    <section>
+        <div class="question-box">
+            <div class="ques">
+                <h2>What does HTML stand for?</h2>
+            </div>
+            <div class="option-list">
+                <div class="option">
+                    <ol>
+                        <li><span>Hyper Text Marketing Language</span></li>
+                        <li><span>Hyper Text Markup Language</span></li>
+                        <li><span>Happy Times Meeting Luau</span></li>
+                        <li><span>Handy Tool Multiple Language</span></li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <script src="assets/js/script.js"></script>
 </body>
 

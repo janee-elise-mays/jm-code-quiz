@@ -119,7 +119,7 @@ document.addEventListener("keydown", function(event) {
     return;
   }
 // Attach event listener to start button to call startGame function on click
-startButton.addEventListener("click", startGame);
+startButton.addEventListener("click", startTimer);
 
 // Calls init() so that it fires when page opened
 init();
