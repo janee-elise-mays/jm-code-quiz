@@ -3,7 +3,7 @@ header, h1{
     font-size: 20px;
 }
 body{
-    background-color: black;
+    background-color: white;
 }
 .start-button{
         display: inline-block;
@@ -27,12 +27,6 @@ body{
         box-shadow: 0 5px black;
         transform: translateY(4px);;
     }
-.question-box.activeInfo {
-    z-index: 5;
-    opacity: 1;
-    pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1);
-}
 .start-box, .question-box{
     position: absolute; 
     top: 50%;
@@ -42,6 +36,8 @@ body{
     width: 600px;
     background: white;
     border-radius: 5px;
+    border: solid black;
+    
 }
 .timer{
     background-color: white;
@@ -49,13 +45,35 @@ body{
     justify-content: space-around;
 }
 .option{
-    background-color: lightblue;
-    border: 1px solid #84c5fe;
+    background-color: lavender;
+    border: 1px solid plum;
     border-radius: 5px;
     padding: 8px 15px;
     margin-bottom: 15px;
+    margin-top: 15px;
     display: flex;
 }
 .option:hover{
     background: #84c5fe;
 }
+#generate{
+        display: inline-block;
+        margin: auto;
+        padding: 15px 25px;
+        font-size: 10px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: slategray;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px black;
+}
+#generate:hover {background-color: slategray}
+
+#generate:active {
+        background-color: slategray;
+        box-shadow: 0 5px black;
+        transform: translateY(4px);;

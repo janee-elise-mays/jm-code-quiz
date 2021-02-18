@@ -18,18 +18,13 @@
                 your score/time by ten seconds!
             </p>
             <button class="start-button">Start</button>
-            <!-- Quiz timer -->
-            <div class="timer">
-                <div class="time-text">Time Remaining</div>
-                <div class="time-sec">75</div>
-            </div>
         </div>
     </header>
     <section>
         <div class="question-box">
-            <h1>What does HTML stand for?</h1>
+            <h1><span>What does HTML stand for?</span></h1>
             <div class="option-list">
-                <div class="option">
+                <!-- <div class="option">
                     <span>1. Hyper Text Marketing Language</span>
                 </div>
                 <div class="option">
@@ -40,91 +35,88 @@
                 </div>
                 <div class="option">
                     <span>4. Handy Tool Multiple Language</span>
+                </div> -->
+            </div>
+        </div>
+        <div class="question-box">
+            <h1><span>Which one of these is NOT a coding language</span></h1>
+            <div class="option-list">
+                <div class="option">
+                    <span>1. CSS</span>
+                </div>
+                <div class="option">
+                    <span>2. JavaScript</span>
+                </div>
+                <div class="option">
+                    <span>3. Python</span>
+                </div>
+                <div class="option">
+                    <span>4. Dinosaur</span>
                 </div>
             </div>
-            <div class="question-box">
-                <h1>Which one of these is NOT a coding language</h1>
-                <div class="option-list">
-                    <div class="option">
-                        <span>1. CSS</span>
-                    </div>
-                    <div class="option">
-                        <span>2. JavaScript</span>
-                    </div>
-                    <div class="option">
-                        <span>3. Python</span>
-                    </div>
-                    <div class="option">
-                        <span>4. Dinosaur</span>
-                    </div>
+        </div>
+        <div class="question-box">
+            <h1><span>What does CSS stand for?</span></h1>
+            <div class="option-list">
+                <div class="option">
+                    <span>1. Cascading Style Sheet</span>
+                </div>
+                <div class="option">
+                    <span>2. Country style sausages</span>
+                </div>
+                <div class="option">
+                    <span>3. Computer Styling System</span>
+                </div>
+                <div class="option">
+                    <span>4. Common Security Sheet</span>
                 </div>
             </div>
-            <div class="question-box">
-                <h1>What does CSS stand for?</h1>
-                <div class="option-list">
-                    <div class="option">
-                        <span>1. Cascading Style Sheet</span>
-                    </div>
-                    <div class="option">
-                        <span>2. Country style sausages</span>
-                    </div>
-                    <div class="option">
-                        <span>3. Computer Styling System</span>
-                    </div>
-                    <div class="option">
-                        <span>4. Common Security Sheet</span>
-                    </div>
+        </div>
+        <div class="question-box">
+            <h1><span>What is a good resource website for coding?</span></h1>
+            <div class="option-list">
+                <div class="option">
+                    <span>1. developer.mozill.org</span>
+                </div>
+                <div class="option">
+                    <span>2. w3schools.com </span>
+                </div>
+                <div class="option">
+                    <span>3. stackoverflow.com</span>
+                </div>
+                <div class="option">
+                    <span>4. All of the above</span>
                 </div>
             </div>
-            <div class="question-box">
-                <h1>What is a good resource website for coding?</h1>
-                <div class="option-list">
-                    <div class="option">
-                        <span>1. developer.mozill.org</span>
-                    </div>
-                    <div class="option">
-                        <span>2. w3schools.com </span>
-                    </div>
-                    <div class="option">
-                        <span>3. stackoverflow.com</span>
-                    </div>
-                    <div class="option">
-                        <span>4. All of the above</span>
-                    </div>
+        </div>
+        <div class="question-box">
+            <h1><span>What is CSS used for?</span></h1>
+            <div class="option-list">
+                <div class="option">
+                    <span>1. It's used to prioritize javascript variables</span>
+                </div>
+                <div class="option">
+                    <span>2. It provides styling to HTML elements</span>
+                </div>
+                <div class="option">
+                    <span>3. It's an independent document that runs a website</span>
+                </div>
+                <div class="option">
+                    <span>4. None of the above</span>
                 </div>
             </div>
-            <div class="question-box">
-                <h1>What is CSS used for?</h1>
-                <div class="option-list">
-                    <div class="option">
-                        <span>1. It's used to prioritize javascript variables</span>
-                    </div>
-                    <div class="option">
-                        <span>2. It provides styling to HTML elements</span>
-                    </div>
-                    <div class="option">
-                        <span>3. It's an independent document that runs a website</span>
-                    </div>
-                    <div class="option">
-                        <span>4. None of the above</span>
-                    </div>
+        </div>
+        <div class="question-box">
+            <h1><span>All Done!</span></h1>
+            <div class="option-list">
+                <div class="option">
+                    <label for=enterInitials>Enter Initials</label>
+                    <input type="text" id="enterInitials">
                 </div>
-            </div>
-            <div class="question-box">
-                <h1>All Done!</h1>
-                <div class="option-list">
-                    <div class="option">
-                        <span>1. It's used to prioritize javascript variables</span>
-                    </div>
-                    <div class="option">
-                        <span>2. It provides styling to HTML elements</span>
-                    </div>
-                    <div class="option">
-                        <span>3. It's an independent document that runs a website</span>
-                    </div>
-                    <div class="option">
-                        <span>4. None of the above</span>
-                    </div>
+                <div class="option">
+                    <button id="generate" class="btn" onclick="showScore()">
+                        Submit
+                    </button>
                 </div>
             </div>
         </div>
@@ -132,4 +124,4 @@
     <script src="assets/js/script.js"></script>
 </body>
 
-</html>
+</html> -->
