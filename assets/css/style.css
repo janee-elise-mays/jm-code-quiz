@@ -37,7 +37,7 @@ body{
     background: white;
     border-radius: 5px;
     border: solid black;
-    
+    visibility: hidden;
 }
 .timer{
     background-color: white;
@@ -45,6 +45,7 @@ body{
     justify-content: space-around;
 }
 .option{
+    text-align: center;
     background-color: lavender;
     border: 1px solid plum;
     border-radius: 5px;
@@ -77,3 +78,4 @@ body{
         background-color: slategray;
         box-shadow: 0 5px black;
         transform: translateY(4px);;
+}

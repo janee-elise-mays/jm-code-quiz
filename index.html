@@ -11,102 +11,103 @@
 <body>
     <header>
         <!-- Quiz Begin Box containing quiz description and start button -->
-        <div class="start-box">
+        <div id="question-box-0" class="start-box">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within
                 the time limit. Keep in mind the incorrect answers will penalize
                 your score/time by ten seconds!
             </p>
-            <button class="start-button">Start</button>
+            <button class="start-button" id="startBtn" onclick="checkAnswer(this)">Start</button>
         </div>
     </header>
     <section>
-        <div class="question-box">
-            <h1><span>What does HTML stand for?</span></h1>
-            <div class="option-list">
-                <!-- <div class="option">
-                    <span>1. Hyper Text Marketing Language</span>
-                </div>
-                <div class="option">
-                    <span>2. Happy Times Meeting Luau</span>
-                </div>
-                <div class="option">
-                    <span>3. Handy Tool Multiple Language</span>
-                </div>
-                <div class="option">
-                    <span>4. Handy Tool Multiple Language</span>
-                </div> -->
-            </div>
-        </div>
-        <div class="question-box">
+        <div id="timer">timer 75 seconds</div>
+        <div id="question-box-1" class="question-box">
             <h1><span>Which one of these is NOT a coding language</span></h1>
             <div class="option-list">
-                <div class="option">
+                <button class="option" value="A" onclick="checkAnswer(this)">
                     <span>1. CSS</span>
-                </div>
-                <div class="option">
+                </button>
+                <button class="option" value="B" onclick="checkAnswer(this)">
                     <span>2. JavaScript</span>
-                </div>
-                <div class="option">
+                </button>
+                <button class="option" value="C" onclick="checkAnswer(this)">
                     <span>3. Python</span>
-                </div>
-                <div class="option">
+                </button>
+                <button class="option" value="D" onclick="checkAnswer(this)">
                     <span>4. Dinosaur</span>
-                </div>
+                </button>
             </div>
         </div>
-        <div class="question-box">
+        <div id="question-box-2" class="question-box">
+            <h1><span>What does HTML stand for?</span></h1>
+            <div class="option-list">
+                <button class="option" value="A" onclick="checkAnswer(this)">
+                    <span>1. Hyper Text Marketing Language</span>
+                </button>
+                <button class="option" value="B" onclick="checkAnswer(this)">
+                <span>2. Happy Times Meeting Luau</span>
+                </button>
+                <button class="option" value="C" onclick="checkAnswer(this)">
+                <span>3. Handy Tool Multiple Language</span>
+                </button>
+                <button class="option" value="D" onclick="checkAnswer(this)">
+                <span>4. Handy Tool Multiple Language</span>
+                </button>
+            </div>
+        </div>
+        <div id="question-box-3" class="question-box">
             <h1><span>What does CSS stand for?</span></h1>
             <div class="option-list">
-                <div class="option">
+                <button class="option" value="A" onclick="checkAnswer(this)">
                     <span>1. Cascading Style Sheet</span>
-                </div>
-                <div class="option">
+                </button>
+                <button class="option" value="B" onclick="checkAnswer(this)">
                     <span>2. Country style sausages</span>
-                </div>
-                <div class="option">
+                </button>
+                <button class="option" value="C" onclick="checkAnswer(this)">
                     <span>3. Computer Styling System</span>
-                </div>
-                <div class="option">
+                </button>
+                <button class="option" value="D" onclick="checkAnswer(this)">
                     <span>4. Common Security Sheet</span>
-                </div>
+                </button>
             </div>
         </div>
-        <div class="question-box">
+        <div id="question-box-4" class="question-box">
             <h1><span>What is a good resource website for coding?</span></h1>
             <div class="option-list">
-                <div class="option">
+                <button class="option" value="A" onclick="checkAnswer(this)">
                     <span>1. developer.mozill.org</span>
-                </div>
-                <div class="option">
+                </button>
+                <button class="option" value="B" onclick="checkAnswer(this)">
                     <span>2. w3schools.com </span>
-                </div>
-                <div class="option">
+                </button>
+                <button class="option" value="C" onclick="checkAnswer(this)">
                     <span>3. stackoverflow.com</span>
-                </div>
-                <div class="option">
+                </button>
+                <button class="option" value="D" onclick="checkAnswer(this)">
                     <span>4. All of the above</span>
-                </div>
+                </button>
             </div>
         </div>
-        <div class="question-box">
+        <div id="question-box-5" class="question-box">
             <h1><span>What is CSS used for?</span></h1>
             <div class="option-list">
-                <div class="option">
+                <button class="option" value="A" onclick="checkAnswer(this)">
                     <span>1. It's used to prioritize javascript variables</span>
-                </div>
-                <div class="option">
+                </button>
+                <button class="option" value="B" onclick="checkAnswer(this)">
                     <span>2. It provides styling to HTML elements</span>
-                </div>
-                <div class="option">
+                </button>
+                <button class="option" value="C" onclick="checkAnswer(this)">
                     <span>3. It's an independent document that runs a website</span>
-                </div>
-                <div class="option">
+                </button>
+                <button class="option" value="D" onclick="checkAnswer(this)">
                     <span>4. None of the above</span>
-                </div>
+                </button>
             </div>
         </div>
-        <div class="question-box">
+        <div id="question-box-6" class="question-box">
             <h1><span>All Done!</span></h1>
             <div class="option-list">
                 <div class="option">
@@ -124,4 +125,4 @@
     <script src="assets/js/script.js"></script>
 </body>
 
-</html> -->
+</html>
