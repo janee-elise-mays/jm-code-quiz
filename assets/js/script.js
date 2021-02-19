@@ -23,7 +23,8 @@ document.getElementById('question-box-' + currentQuestion).style.visibility = 'v
 function checkAnswer(event) {
     var answer = event.value;
 
-    if (correctAnswers[currentQuestion] == answer) {
+    if (correctAnswers[currentQuestion] != answer && currentQuestion !=0)  {
+        timeleft=timeleft-10;
 
     }
 
