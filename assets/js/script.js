@@ -1,25 +1,27 @@
-var startBtn = document.getElementById('startBtn') 
-var timeleft = 75;
+var startBtn = document.getElementById('startBtn')
+var genBtn = document.getElementById('generate')
+var timeleft = 60;
 var timeleftDisplay = document.getElementById('timer')
-var correctAnswers = ['Start','D', 'A', 'A', 'D', 'B'];
+var correctAnswers = ['Start', 'D', 'A', 'A', 'D', 'B'];
 var currentQuestion = 0;
 var score = 0;
+var initials = document.getElementById('enterInitials').value;
 
-function countDown(){
-    setInterval(function(){
-        if(timeleft <= 0 ) {
+function countDown() {
+    setInterval(function () {
+        if (timeleft <= 0) {
             clearInterval(timeleft = 0)
             document.getElementById('question-box-6').style.visibility = 'visible';
         }
-        if(currentQuestion == 6 ) {
+        if (currentQuestion == 6) {
             clearInterval(timeleft = 0);
         }
-        timeleftDisplay.innerHTML = 'time: '+timeleft; 
+        timeleftDisplay.innerHTML = 'time: ' + timeleft;
         timeleft--;
     }, 1000)
 }
 
-startBtn.addEventListener('click',function(){countDown()});
+startBtn.addEventListener('click', function () { countDown() });
 
 
 document.getElementById('question-box-' + currentQuestion).style.visibility = 'visible';
@@ -27,13 +29,13 @@ document.getElementById('question-box-' + currentQuestion).style.visibility = 'v
 function checkAnswer(event) {
     var answer = event.value;
 
-    if (correctAnswers[currentQuestion] != answer && currentQuestion !=0)  {
-        timeleft=timeleft-10;
+    if (correctAnswers[currentQuestion] != answer && currentQuestion != 0) {
+        timeleft = timeleft - 10;
     }
 
     // check answer against correctAnswer
     // if it's correct, you'll add to their score and move onto the next question
-    if (correctAnswers[currentQuestion] == answer && currentQuestion !=0)  {
+    if (correctAnswers[currentQuestion] == answer && currentQuestion != 0) {
         score++;
     }
 
@@ -41,6 +43,8 @@ function checkAnswer(event) {
     currentQuestion += 1;
     document.getElementById('question-box-' + currentQuestion).style.visibility = 'visible';
 }
- function showScore(){
-     document.getElementById('generate').innerHTML = score;
- }
+function showScore() {
+    document.getElementById('fnlScore', "enterInitials" ).innerHTML = score;
+}
+genBtn.addEventListener('click', function () { showScore() });
+

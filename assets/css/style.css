@@ -72,6 +72,13 @@ body{
 .option:hover{
     background: #84c5fe;
 }
+.player-score{
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    padding: 15px 25px;
+    font-size: 15px;
+}
 #generate{
         display: inline-block;
         margin: auto;
