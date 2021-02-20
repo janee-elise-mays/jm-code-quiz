@@ -3,7 +3,7 @@ var timeleft = 75;
 var timeleftDisplay = document.getElementById('timer')
 var correctAnswers = ['Start','D', 'A', 'A', 'D', 'B'];
 var currentQuestion = 0;
-var score = 1;
+var score = 0;
 
 function countDown(){
     setInterval(function(){
@@ -41,6 +41,6 @@ function checkAnswer(event) {
     currentQuestion += 1;
     document.getElementById('question-box-' + currentQuestion).style.visibility = 'visible';
 }
-//  function showScore(){
-//      document.getElementById('generate').innerHTML = 
-//  }
+ function showScore(){
+     document.getElementById('generate').innerHTML = score;
+ }
