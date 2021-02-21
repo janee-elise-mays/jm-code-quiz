@@ -51,22 +51,4 @@ function showScore() {
 }
 scoreBtn.addEventListener('click', function () { showScore() });
 
-SubmitBtn.onclick = function () {
-    let key = userInput.value;
-    let value = scoreBtn.value;
-
-    if (key && value) {
-        localStorage.setItem(key, value);
-        location.reload();
-    }
-};
-
-fir (let i = 0; i < localStorage.length; i++){
-    const key = localStorage.key(i);
-    const value = localStorage.getItem(key);
-
-
-    genBtn.innerHTML += '${key}; ${value}<br />';
-
-}
 
