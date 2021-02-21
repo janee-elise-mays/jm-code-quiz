@@ -109,24 +109,44 @@
         </div>
         <div id="question-box-6" class="question-box">
             <h1><span>All Done!</span></h1>
+            <p>Your final score is</p>
+            <button id="fnlScore">See My Score</button>
             <div class="option-list">
                 <div class="option">
                     <label for=enterInitials>Enter Initials</label>
-                    <input type="text" id="enterInitials">
+                    <input type="text" id="user">
                     <div class="player-score">
-                        Final Score:
-                        <div id="fnlScore">Input Initials to see final score</div>
+                        Input Initials to save score
                     </div>
                 </div>
                 <div class="option">
-                    <button id="generate" class="btn" onclick="showScore()">
+                    <button id="submit" class="btn" onclick="checkAnswer(this)">
                         Submit
                     </button>
                 </div>
             </div>
+        </div>
+        <div id="question-box-7" class="question-box">
+            <h1><span>High Scores</span></h1>
+            <div class="option-list">
+                <div id="fnlScore"></div>
+                <!-- <div class="option">
+                    <body onload="showScore()">
+                </div> -->
+            </div>
+            <div class="option">
+                <button id="generate" class="btn" onclick="showScore()">
+                    See Previous Scores
+                </button>
+            </div>
+        </div>
         </div>
     </section>
     <script src="assets/js/script.js"></script>
 </body>
 
 </html>
+<!-- type Initials
+submit Initials
+combine initials with score
+display high scores -->

@@ -1,12 +1,13 @@
 # jm-code-quiz
+
 A timed coding quiz with multiple-choice questions.
 
-Begin by creating a start button which triggers a timer.
+## Description
 
-A question is presented - once an answer is selected, it is stored and a new question is provided.
+I began by building the HTML questions. Once it was built I struggled with a way to push and pull different questions into view. In order to rectify this problem, I built an array in javascript with the correct answers. In HTML, I listed a function which is triggered when the test taker clicks on the different answer options. The function compares the selected answer with the correct answers in the array.
 
-If a question is answered incorrectly, time is subtracted from the timer. 
+On the last question box, a text box is shown with initial input. A button allows the final score amount to be shown.
 
-Once all questions are answered OR the timer reaches 0 the game is over.
+https://janee-elise-mays.github.io/jm-code-quiz/
 
-When the game is over, user must submit initials in order to receive score.
+![alt text](assets/images/coding-quiz-challenge.jpg)

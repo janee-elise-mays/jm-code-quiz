@@ -72,14 +72,7 @@ body{
 .option:hover{
     background: #84c5fe;
 }
-.player-score{
-    text-align: center;
-    display: inline-block;
-    margin: auto;
-    padding: 15px 25px;
-    font-size: 15px;
-}
-#generate{
+#submit{
         display: inline-block;
         margin: auto;
         padding: 15px 25px;
@@ -94,9 +87,9 @@ body{
         border-radius: 15px;
         box-shadow: 0 9px black;
 }
-#generate:hover {background-color: slategray}
+#submit:hover {background-color: slategray}
 
-#generate:active {
+#submit:active {
         background-color: slategray;
         box-shadow: 0 5px black;
         transform: translateY(4px);;

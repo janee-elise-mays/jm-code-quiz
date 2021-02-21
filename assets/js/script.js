@@ -1,11 +1,15 @@
-var startBtn = document.getElementById('startBtn')
+var startBtn = document.getElementById('startBtn');
 var genBtn = document.getElementById('generate')
 var timeleft = 60;
-var timeleftDisplay = document.getElementById('timer')
+var timeleftDisplay = document.getElementById('timer');
 var correctAnswers = ['Start', 'D', 'A', 'A', 'D', 'B'];
 var currentQuestion = 0;
 var score = 0;
-var initials = document.getElementById('enterInitials').value;
+var initialsInput = document.getElementById('enterInitials');
+var scoreBtn = document.getElementById('fnlScore');
+var user = document.getElementById('user');
+
+
 
 function countDown() {
     setInterval(function () {
@@ -44,7 +48,18 @@ function checkAnswer(event) {
     document.getElementById('question-box-' + currentQuestion).style.visibility = 'visible';
 }
 function showScore() {
-    document.getElementById('fnlScore', "enterInitials" ).innerHTML = score;
+    document.getElementById('fnlScore').innerHTML = score;
 }
-genBtn.addEventListener('click', function () { showScore() });
+scoreBtn.addEventListener('click', function () { showScore() });
 
+let enterInitials = user.value;
+localStorage.setItem('user', )
+
+// genBtn.addEventListener('click', function(event) {
+//     event.preventDefault();
+
+//     let enterInitials = user.value;
+//     let fnlScore = score;
+//     console.log(enterInitials);
+//     console.log(fnlScore);
+// }
