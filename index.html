@@ -17,6 +17,7 @@
                 the time limit. Keep in mind the incorrect answers will penalize
                 your score/time by ten seconds!
             </p>
+            <!-- checkAnser function is used to compared selected answer agains correct answer array -->
             <button class="start-button" id="startBtn" onclick="checkAnswer(this)">Start</button>
         </div>
     </header>
@@ -110,6 +111,7 @@
         <div id="question-box-6" class="question-box">
             <h1><span>All Done!</span></h1>
             <p>Your final score is</p>
+            <!-- button used to trigger function which pulls user total score -->
             <button id="fnlScore">See My Score</button>
             <div class="option-list">
                 <div class="option">
@@ -130,11 +132,9 @@
             <h1><span>High Scores</span></h1>
             <div class="option-list">
                 <div id="fnlScore"></div>
-                <!-- <div class="option">
-                    <body onload="showScore()">
-                </div> -->
             </div>
             <div class="option">
+                <!-- used button to call total score -->
                 <button id="generate" class="btn" onclick="showScore()">
                     See Previous Scores
                 </button>
@@ -146,7 +146,3 @@
 </body>
 
 </html>
-<!-- type Initials
-submit Initials
-combine initials with score
-display high scores -->

@@ -53,7 +53,7 @@ function showScore() {
 scoreBtn.addEventListener('click', function () { showScore() });
 
 let enterInitials = user.value;
-localStorage.setItem('user', )
+localStorage.setItem('user')
 
 // genBtn.addEventListener('click', function(event) {
 //     event.preventDefault();
