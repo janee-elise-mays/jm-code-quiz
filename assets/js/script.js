@@ -50,5 +50,3 @@ function showScore() {
     document.getElementById('fnlScore').innerHTML = score;
 }
 scoreBtn.addEventListener('click', function () { showScore() });
-
-
